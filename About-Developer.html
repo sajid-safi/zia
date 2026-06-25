@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="profile.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sajid Safi </title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* NAVBAR */
+nav{
+    background:#0f172a;
+    color:#fff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:10px;
+}
+
+/* HERO */
+.hero{
+    background:#0f172a;
+    color:#fff;
+    padding:60px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.hero img{
+    width:280px;
+    height: auto;
+    border-radius:50px;
+    border:3px solid #fff;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero-text p{
+    margin:5px 2;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 15px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:8px;
+    text-decoration:none;
+    
+}
+
+/* SECTIONS */
+section{
+    padding:60px 10%;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+/* SKILLS */
+.skill{
+    margin-bottom:15px;
+}
+
+.skill-bar{
+    width:100%;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.skill-fill{
+    height:10px;
+    background:#2563eb;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:12px 15px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+    color:#fff;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Sajid Safi</h2>
+
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm Sajid Safi</h1>
+        <p>Computer Science Student</p>
+        <p>Aspiring Full Stack Web Developer</p>
+        <a class="btn" href="#contact">Hire Me</a>
+    </div>
+
+    <img src="profile.jpg" alt="Profile">
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am Sajid Safi, a Computer Science student passionate about web development.
+        I build modern, responsive websites and I am currently learning Python to become a Full Stack Developer.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Git & GitHub</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Python (Learning)</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+        <div class="card">
+            <h3>CareSite</h3>
+            <p>Healthcare website built using HTML & CSS</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive portfolio design</p>
+        </div>
+
+        <div class="card">
+            <h3>Future Projects</h3>
+            <p>Full Stack Web Applications (Coming Soon)</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+        <p>Email: sajidurrhmansafi5@gmail.com</p>
+        <p>WhatsApp: 0093767999581</p>
+        <p>GitHub: github.com/sajid-safi</p>
+    </div>
+</section>
+      <div class="button-center">
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Sajid Safi. All Rights Reserved.
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/93767999581" target="_blank">
+    WhatsApp
+</a>
+
+</body>
+</html>
